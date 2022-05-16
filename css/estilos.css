@@ -182,6 +182,7 @@ header{
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
+    color: #58695e;
     text-align: center;
     transition: all 0.25s; 
 }
@@ -217,8 +218,8 @@ header{
 
 h3 {
     grid-area: titulo;
-    color: #58695e;
     font-size: 20px;
+    color: #58695e
 }
 
 .form__contacto {
