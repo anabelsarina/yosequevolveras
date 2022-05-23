@@ -27,18 +27,12 @@ a{
     color: white;
 }
 
-a:hover{
-    text-decoration: none;
-    color: #58695e;
-    font-weight: bold;
+.navbar{
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 }
 
-li {
-    display: flex;
-    flex-wrap: nowrap;
-    display: inline;
-    padding: 16px;
-    font-size: 18px;
+.bg-pink{
+    background: #c1aa97
 }
 
 .titulos {
@@ -49,34 +43,6 @@ li {
     text-align: end;
     padding-top: 100px;
     padding-bottom: 50px;
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    width: 100%;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
-    position: fixed;
-    z-index: 1;
-    background: #c1aa97;
-	content:35%;
-    padding: 5px;
-}
-
-.header__navegacion{
-    display: flex;
-    align-items: inherit;
-    flex-wrap: wrap;
-    padding: 15px;
-}
-
-.header__logo {
-    display: flex;
-    width: 7%;
-    margin-left: 2%;
 }
 
 .header__inicio {
@@ -163,7 +129,7 @@ header{
 
 /* Segunda sección - productos */
 
-.img__productos {
+.img-productos {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -173,7 +139,7 @@ header{
     margin: auto;
 } 
 
-.conteiner__productos {
+.card {
     width: 330px;
     height: 530px;
     background-image: url(../recursos/backgraund2.png);
@@ -187,12 +153,12 @@ header{
     transition: all 0.25s; 
 }
 
-.conteiner__productos:hover {
+.card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.imgcont__productos {
+.imgcard {
     width: 330px;
     height: 220 px;
 }
@@ -208,7 +174,7 @@ header{
     
 }
 
-.conteiner__productos h4 {
+.card h4 {
     padding-top: 10px;
 }
 
@@ -222,63 +188,29 @@ h3 {
     color: #58695e
 }
 
-.form__contacto {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.form {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "subtitulo subtitulo subtitulo"
-    "nombre nombre nombre"
-    "correo correo correo"
-    "mensaje mensaje mensaje"
-    "boton boton boton"
-    ;
-    flex: 1; 
-    text-align: center;
-    padding: 50px;
-}
-
-.form__section-nombre {
-    grid-area: nombre;
-}
-
-.form__section-correo {
-    grid-area: correo;
-}
-
-.form__section-mensaje{
-    grid-area: mensaje;
-}
-
-.form__section-boton {
-    grid-area: boton;
-}
-
-.form__input {
+.form-input {
     width: 50%;
     padding: 7px;
     margin: 12px 0;
     border: none;
-    border-style: outset;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #73837836;
     border-radius: 20px;
     outline: none;
-    color: rgb(0, 0, 0);
-    background-color: #73837865;
+    color: black;
 }
 
 .form textarea {
-    flex: 1;
     min-height: 150px;
     resize: none;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 50px;
 }
 
 .form__boton {
@@ -422,11 +354,6 @@ h3 {
         font-size: 17px;
 }
 
-    li {
-        font-size: 15px;
-        padding: 10px;
-}
-
     .titulos {
         font-size: 26px;
         padding-top: 85px;
@@ -439,10 +366,6 @@ h3 {
         height: 26px;
 }
 
-    header{
-        height: 60px;
-}
-    
     .fab {
         width: 52px;
         height: 52px;
@@ -474,11 +397,6 @@ h3 {
         font-size: 15px;
 }
 
-    
-    li {
-        font-size: 13px;
-}
-
     .titulos {
         font-size: 22px;
         padding-top: 75px;
@@ -497,14 +415,10 @@ h3 {
         font-size: 10px;
 }
 
-    header{
-        height: 52px;
-}
-
     .header__logo {
         width: 9%;
 }
-    
+
     .form {
         display: grid;
         grid-template-columns: 1fr;
@@ -566,17 +480,8 @@ h3 {
 }
 
 
-    header{
-        height: 40px;
-}
-
     .conteiner__quienes_somos { 
         grid-template-columns: 1fr;
-}
-
-    li {
-        font-size: 11px;
-        padding: 5px;
 }
 
 .form__contacto {
@@ -625,9 +530,6 @@ h3 {
         font-size: 9px;
 }
 
-    .header__logo {
-        width: 11%;
-}
 }
 
 @media screen and (max-width: 320px) {

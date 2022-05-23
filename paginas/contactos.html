@@ -16,41 +16,60 @@
 <body>
 
     <header>
-        <img class="header__logo"  src="../recursos/logo.png" alt="Logo" class="header__logo"/>
-        <nav class="header__navegacion">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../paginas/quienes_somos.html">¿Quienes somos?</a></li>
-            <li><a href="../paginas/productos.html" >Productos</a></li>
-            <li><a href="../paginas/contactos.html" >Contactos</a></li>
-            <li><a href="../paginas/carrito.html" >Carrito</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-pink">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/logo.png" alt="Logo" width="40" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon icon-ligth"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/quienes_somos.html">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/productos.html">Productos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/carrito.html">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="contacto">
             <h2 class="titulos">Contactanos</h2>
-            <div class="form__contacto">
+            <div class="mb-3">
                 <form class="form">
                     <h3>Recibí nuestras novedades</h3>
         
-                    <div class="form__section-nombre">
-                        <input class="form__input" type="text" name="Nombre" placeholder="Nombre">
+                    <div class="form-section">
+                        <input class="form-input" type="text" name="Nombre" placeholder="Nombre">
                     </div>   
         
-                    <div class="form__section-correo">
-                        <input class="form__input" type="email" name="Mail" placeholder="Correo electrónico">
+                    <div class="form-section">
+                        <input class="form-input" type="email" name="Mail" placeholder="Correo electrónico">
                     </div>
         
-                    <div class="form__section-mensaje">
-                        <textarea class="form__input" placeholder="Escribí tu mensaje acá"></textarea>
+                    <div class="form-section">
+                        <textarea class="form-input" placeholder="Escribí tu mensaje acá"></textarea>
                     </div> 
         
-                    <div class="form__section-boton">
+                    <div class="form-section">
                         <input class="form__boton" type="submit" name="Enviar">
                     </div>           
-                </form>         
+                </form> 
             </div>
         
         </section>
