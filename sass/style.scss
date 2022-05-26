@@ -1,0 +1,264 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'mediaqueries';
+
+
+
+
+*, * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontfamily-body;
+    overflow-x: hidden;
+    box-sizing: content-box
+}
+
+h1 {
+    font-size: 70px;
+    font-family: $fontfamily-h1;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: $color-menutitulos;
+}
+
+.titulos {
+    color: #adcfc9;
+    font-weight: bold;
+    font-size: 30px;
+    -webkit-text-stroke: 0.2px #009398;
+    text-align: end;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.inicio{
+    &__contppal {
+        background-image: url(../recursos/10.jpg); 
+        background-size: cover;
+        background-position: top;
+    }
+    &__container {
+        height: 100vh;
+        font-size: 30px;
+        color: #3f4942;
+        text-align: center;
+        letter-spacing: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        background-color: #edcda86e;
+    }
+    &__boton {
+        width: 250px;
+        margin: 12px 0;
+        border: none;
+        border-style: ridge;
+        border-radius: 20px;
+        outline: none;
+        color: $color-letraboton;
+        background-color: #738378;
+        height: 30px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border-style: outset;
+        font-size: 14px;
+        text-align: center;
+        transition: all 0.25s; 
+    }
+    &__boton:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+        background-color: $color-hover;
+    }
+}
+
+
+/* Primera sección - ¿Quienes somos? */
+
+.quienes_somos{
+
+}
+
+.quienes_somos {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &__conteiner { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: 100vh;
+    }
+    &__titulo {
+        text-align: center;
+    }
+    &__texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    &__p {
+        line-height: 21px;
+        margin-top: 5px;
+        padding: 30px;
+        text-align: justify;
+    }
+    
+}
+
+.logoysqv {
+    width: 90%;
+    margin-left: 5px;
+}
+
+/* Segunda sección - productos */
+
+.img-productos {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+} 
+
+.card {
+    width: 330px;
+    height: 530px;
+    background-image: url(../recursos/backgraund2.png);
+    background-position: 1%;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    color: #58695e;
+    text-align: center;
+    transition: all 0.25s; 
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imgcard {
+    width: 330px;
+    height: 220 px;
+}
+
+.descripcion {
+    padding: 10px;
+    font-size: 16 px;
+    font-weight: 300;
+}
+
+.tituloproductos {
+    text-align: center;
+    
+}
+
+.card h4 {
+    padding-top: 10px;
+}
+
+
+/* Tercera sección - Formulario de contacto */ 
+
+
+h3 {
+    grid-area: titulo;
+    font-size: 20px;
+    color: $color-titulos;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    &-input {
+        width: 50%;
+        padding: 7px;
+        margin: 12px 0;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        background-color: #73837836;
+        border-radius: 20px;
+        outline: none;
+        color: black;
+    }
+    & textarea {
+        min-height: 150px;
+        resize: none;
+    }
+    &__boton {
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border: none;
+        border-style: outset;
+        margin: 12px 0;
+        color: $color-letraboton;
+        background-color: #738378;
+        text-align: center;
+        transition: all 0.25s; 
+    }
+    &__boton:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+        background-color: $color-hover;
+    }
+}
+
+/* Cuarta sección - Carrito */
+
+.carrito{
+    &__conteiner  {    
+        min-width: 400px;
+        height: 100vh;
+        flex: 1; 
+        text-align: center;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subttit {
+        color: $color-titulos;
+    }
+    &__productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1; 
+        text-align: center;
+        padding: 50px;
+        color: rgba(0, 0, 0, 0.247);
+    }
+    &__boton {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

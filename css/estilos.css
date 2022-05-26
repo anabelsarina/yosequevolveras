@@ -1,194 +1,339 @@
-*, * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+.navbar {
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6); }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    box-sizing: content-box
-}
+.bg-pink {
+  background: #c1aa97; }
 
-h1 {
-    font-size: 70px;
-    font-family: 'Merriweather', serif
-}
+.contenedor__footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-h2 {
+.fab {
+  display: flex;
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  border-style: outset;
+  margin: 12px 0; }
+
+.facebook {
+  background: radial-gradient(#4965a618, #c0375728), url(../recursos/facebook_icon-1.png);
+  background-size: contain;
+  transition: all 0.25s; }
+
+.facebook:hover {
+  transform: scale(1.5);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.instagram {
+  background: radial-gradient(#4965a618, #c0375728), url(../recursos/Instagram_icon-1.png);
+  background-size: contain;
+  transition: all 0.25s; }
+
+.instagram:hover {
+  transform: scale(1.5);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.mail {
+  background: radial-gradient(#4965a618, #c0375728), url(../recursos/email_icon-1.png);
+  background-size: contain;
+  transition: all 0.25s; }
+
+.mail:hover {
+  transform: scale(1.5);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.YoSeQueVolveras {
+  background-color: #c1aa97;
+  text-align: center;
+  padding: 10px; }
+  .YoSeQueVolveras h4 {
+    text-transform: uppercase;
+    font-size: 10px; }
+  .YoSeQueVolveras h5 {
+    font-size: 9px; }
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+    font-family: 'Merriweather', serif; }
+  h2 {
     display: flex;
     justify-content: center;
-    font-size: 32px;
-}
+    font-size: 28px; }
+  h3 {
+    font-size: 17px; }
+  .titulos {
+    font-size: 26px;
+    padding-top: 85px;
+    padding-bottom: 44px; }
+  .inicio__boton {
+    width: 219px;
+    border-radius: 17px;
+    height: 26px; }
+  .fab {
+    width: 52px;
+    height: 52px; }
+  .YoSeQueVolveras h4 {
+    font-size: 8px; }
+  .YoSeQueVolveras h5 {
+    font-size: 7px; } }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.navbar{
-    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
-}
-
-.bg-pink{
-    background: #c1aa97
-}
-
-.titulos {
-    color: #adcfc9;
-    font-weight: bold;
-    font-size: 30px;
-    -webkit-text-stroke: 0.2px #009398;
-    text-align: end;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.header__inicio {
-    background-image: url(../recursos/10.jpg); 
-    background-size: cover;
-    background-position: top;
-}
-
-.container__inicio {
-    height: 100vh;
-    font-size: 30px;
-    color: #3f4942;
-    text-align: center;
-    letter-spacing: 4px;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 52px;
+    font-family: 'Merriweather', serif; }
+  h2 {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    background-color: #edcda86e;
-}
-
-.boton__inicio {
-    width: 250px;
-    margin: 12px 0;
+    justify-content: center;
+    font-size: 24px; }
+  h3 {
+    font-size: 15px; }
+  .titulos {
+    font-size: 22px;
+    padding-top: 75px;
+    padding-bottom: 37px; }
+  .inicio__boton {
+    width: 187px;
+    border-radius: 15px;
+    font-size: 12px; }
+  .form__boton {
+    width: 75px;
+    height: 22px;
+    font-size: 10px; }
+  .form__input {
+    width: 100%;
+    margin: 5px 0;
     border: none;
-    border-style: ridge;
+    border-style: outset;
     border-radius: 20px;
     outline: none;
-    color: #fff;
-    background-color: #738378;
-    height: 30px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border-style: outset;
-    font-size: 14px;
-    text-align: center;
-    transition: all 0.25s; 
-}
+    color: black;
+    background-color: #73837865; } }
 
-.boton__inicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
-    background-color: #3f4942;
-}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif; }
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 18px; }
+  h3 {
+    font-size: 12px; }
+  .titulos {
+    font-size: 17px;
+    padding-top: 58px;
+    padding-bottom: 29px; }
+  .inicio__boton {
+    width: 146px;
+    border-radius: 10px;
+    font-size: 10px; }
+  .carrito__boton {
+    height: 87px;
+    font-size: 10px; }
+  .form__contacto {
+    height: 70vh; }
+  .fab {
+    width: 35px;
+    height: 35px; }
+  .YoSeQueVolveras h4 {
+    font-size: 7px; }
+  .YoSeQueVolveras h5 {
+    font-size: 6px; } }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+    font-family: 'Merriweather', serif; }
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px; }
+  .titulos {
+    padding-top: 46px;
+    padding-bottom: 24px; }
+  .inicio__boton {
+    width: 117px;
+    border-radius: 9px; }
+  .carrito__boton {
+    height: 70px;
+    font-size: 9px; } }
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 20px; }
+  h2 {
+    font-size: 10px; }
+  .titulos {
+    padding-top: 31px;
+    padding-bottom: 15px; }
+  .inicio__boton {
+    width: 78px;
+    border-radius: 6px; } }
+
+*, * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  box-sizing: content-box; }
+
+h1 {
+  font-size: 70px;
+  font-family: "Merriweather", serif; }
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 32px; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.titulos {
+  color: #adcfc9;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-text-stroke: 0.2px #009398;
+  text-align: end;
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
+.inicio__contppal {
+  background-image: url(../recursos/10.jpg);
+  background-size: cover;
+  background-position: top; }
+
+.inicio__container {
+  height: 100vh;
+  font-size: 30px;
+  color: #3f4942;
+  text-align: center;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: #edcda86e; }
+
+.inicio__boton {
+  width: 250px;
+  margin: 12px 0;
+  border: none;
+  border-style: ridge;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  background-color: #738378;
+  height: 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-style: outset;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.25s; }
+
+.inicio__boton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  background-color: #3f4942; }
 
 /* Primera sección - ¿Quienes somos? */
-
-.conteiner__quienes_somos { 
+.quienes_somos {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .quienes_somos__conteiner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     width: 100%;
-    height: 100vh;
-}
-
-.quienes_somos {
-    float: left;
+    height: 100vh; }
+  .quienes_somos__titulo {
+    text-align: center; }
+  .quienes_somos__texto {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.logoysqv {
-    width: 90%;
-    margin-left: 5px;
-}
-
-.ttitulo__quienes_somos {
-    text-align: center;
-    
-}
-.texto__quienes_somos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }   
-
-.p__quienes_somos {
+    align-items: center; }
+  .quienes_somos__p {
     line-height: 21px;
     margin-top: 5px;
     padding: 30px;
-    text-align: justify;
-}
+    text-align: justify; }
+
+.logoysqv {
+  width: 90%;
+  margin-left: 5px; }
 
 /* Segunda sección - productos */
-
 .img-productos {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-} 
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
 
 .card {
-    width: 330px;
-    height: 530px;
-    background-image: url(../recursos/backgraund2.png);
-    background-position: 1%;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    color: #58695e;
-    text-align: center;
-    transition: all 0.25s; 
-}
+  width: 330px;
+  height: 530px;
+  background-image: url(../recursos/backgraund2.png);
+  background-position: 1%;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  color: #58695e;
+  text-align: center;
+  transition: all 0.25s; }
 
 .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 .imgcard {
-    width: 330px;
-    height: 220 px;
-}
+  width: 330px;
+  height: 220 px; }
 
 .descripcion {
-    padding: 10px;
-    font-size: 16 px;
-    font-weight: 300;
-}
+  padding: 10px;
+  font-size: 16 px;
+  font-weight: 300; }
 
 .tituloproductos {
-    text-align: center;
-    
-}
+  text-align: center; }
 
 .card h4 {
-    padding-top: 10px;
-}
+  padding-top: 10px; }
 
-
-/* Tercera sección - Formulario de contacto */ 
-
-
+/* Tercera sección - Formulario de contacto */
 h3 {
-    grid-area: titulo;
-    font-size: 20px;
-    color: #58695e
-}
+  grid-area: titulo;
+  font-size: 20px;
+  color: #58695e; }
 
-.form-input {
+.form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 50px; }
+  .form-input {
     width: 50%;
     padding: 7px;
     margin: 12px 0;
@@ -198,22 +343,11 @@ h3 {
     background-color: #73837836;
     border-radius: 20px;
     outline: none;
-    color: black;
-}
-
-.form textarea {
+    color: black; }
+  .form textarea {
     min-height: 150px;
-    resize: none;
-}
-
-.form {
-    min-width: 400px;
-    flex: 1;
-    text-align: center;
-    padding: 50px;
-}
-
-.form__boton {
+    resize: none; }
+  .form__boton {
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -225,331 +359,37 @@ h3 {
     color: #fff;
     background-color: #738378;
     text-align: center;
-    transition: all 0.25s; 
-}
-.form__boton:hover {
+    transition: all 0.25s; }
+  .form__boton:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
-    background-color: #3f4942;
-}
+    background-color: #3f4942; }
 
 /* Cuarta sección - Carrito */
+.carrito__conteiner {
+  min-width: 400px;
+  height: 100vh;
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.conteiner__carrito  {    
-    min-width: 400px;
-    height: 100vh;
-    flex: 1; 
-    text-align: center;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subttit__carrito {
-    color: #58695e;
-}
+.carrito__subttit {
+  color: #58695e; }
 
 .carrito__productos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1; 
-    text-align: center;
-    padding: 50px;
-    color: rgba(0, 0, 0, 0.247);
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+  color: rgba(0, 0, 0, 0.247); }
 
-.boton__carrito {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Quinta sección - Footer */
-
-.contenedor__footer {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fab {
-    display: flex;
-    display: inline-flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border: none;
-    border-style: outset;
-    margin: 12px 0;
-}
-
-.facebook {
-    background: radial-gradient(#4965a618,#c0375728), url(../recursos/facebook_icon-1.png);
-    background-size: contain;
-    transition: all 0.25s; 
-}
-
-.facebook:hover {
-    transform: scale(1.5);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.instagram {
-    background: radial-gradient(#4965a618,#c0375728), url(../recursos/Instagram_icon-1.png);
-    background-size: contain;
-    transition: all 0.25s; 
-}
-
-.instagram:hover {
-    transform: scale(1.5);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.mail {
-    background: radial-gradient(#4965a618,#c0375728), url(../recursos/email_icon-1.png);
-    background-size: contain;
-    transition: all 0.25s; 
-}
-
-.mail:hover {
-    transform: scale(1.5);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.YoSeQueVolveras {
-    background-color: #c1aa97;
-    text-align: center;
-    padding: 10px;   
-}
-.YoSeQueVolveras h4 {   
-    text-transform: uppercase;
-    font-size: 10px;
-}
-.YoSeQueVolveras h5 {
-    font-size: 9px;
-}
-
-/* Responsive */
-
-@media screen and (max-width: 900px) {
-
-    h1 {
-        font-size: 60px;
-        font-family: 'Merriweather', serif
-}
-    
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-size: 28px;
-}
-
-    h3 {
-        font-size: 17px;
-}
-
-    .titulos {
-        font-size: 26px;
-        padding-top: 85px;
-        padding-bottom: 44px;
-}
-
-    .boton__inicio {
-        width: 219px;
-        border-radius: 17px;
-        height: 26px;
-}
-
-    .fab {
-        width: 52px;
-        height: 52px;
-}
-
-    .YoSeQueVolveras h4 {   
-        font-size: 8px;
-}
-    .YoSeQueVolveras h5 {
-        font-size: 7px;
-}
-
-}
-
-@media screen and (max-width: 768px) {
-
-    h1 {
-        font-size: 52px;
-        font-family: 'Merriweather', serif
-}
-    
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 15px;
-}
-
-    .titulos {
-        font-size: 22px;
-        padding-top: 75px;
-        padding-bottom: 37px;
-}
-
-    .boton__inicio {
-        width: 187px;
-        border-radius: 15px;
-        font-size: 12px;
-}
-
-    .form__boton {
-        width: 75px;
-        height: 22px;
-        font-size: 10px;
-}
-
-    .header__logo {
-        width: 9%;
-}
-
-    .form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "titulo"
-        "subtitulo"
-        "nombre"
-        "correo"
-        "mensaje"
-        "boton"
-        ;
-}
-
-    .form__input {
-        width: 100%;
-        margin: 5px 0;
-        border: none;
-        border-style: outset;
-        border-radius: 20px;
-        outline: none;
-        color: rgb(0, 0, 0);
-        background-color: #73837865;
-}
-
-}
-
-@media screen and (max-width: 600px) {
-
-    h1 {
-        font-size: 40px;
-        font-family: 'Merriweather', serif
-}
-    
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-}
-
-    h3 {
-        font-size: 12px;
-}
-
-    .titulos {
-        font-size: 17px;
-        padding-top: 58px;
-        padding-bottom: 29px;
-}
-
-    .boton__inicio {
-        width: 146px;
-        border-radius: 10px;
-        font-size: 10px;
-}
-
-    .boton__carrito {
-        height: 87px;
-        font-size: 10px;
-}
-
-
-    .conteiner__quienes_somos { 
-        grid-template-columns: 1fr;
-}
-
-.form__contacto {
-    height: 70vh;
-}
-
-    .fab {
-        width: 35px;
-        height: 35px;
-}
-
-    .YoSeQueVolveras h4 {   
-        font-size: 7px;
-}
-    .YoSeQueVolveras h5 {
-        font-size: 6px;
-}
-
-}
-
-@media screen and (max-width: 480px) {
-
-    h1 {
-        font-size: 32px;
-        font-family: 'Merriweather', serif
-}
-    
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-size: 15px;
-}
-
-    .titulos {
-        padding-top: 46px;
-        padding-bottom: 24px;
-}
-
-    .boton__inicio {
-        width: 117px;
-        border-radius: 9px;
-}
-
-    .boton__carrito {
-        height: 70px;
-        font-size: 9px;
-}
-
-}
-
-@media screen and (max-width: 320px) {
-
-    h1 {
-        font-size: 20px;
-}
-    
-    h2 {
-        font-size: 10px;
-}
-
-    .titulos {
-        padding-top: 31px;
-        padding-bottom: 15px;
-}
-
-    .boton__inicio {
-        width: 78px;
-        border-radius: 6px;
-}
-
-}
+.carrito__boton {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
